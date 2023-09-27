@@ -1,0 +1,9 @@
+from models.experimental import attempt_load
+
+# Specify the path to your downloaded pretrained weights
+weights_path = 'weights/yolov5s.pt'
+
+# Load the YOLOv5 model with the specified weights
+model = attempt_load(weights_path, map_location='cpu')  # Use 'cuda' if you have a GPU
+
+# Now you have the YOLOv5 model loaded with pretrained weights
